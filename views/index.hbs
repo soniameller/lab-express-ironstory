@@ -1,2 +1,23 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>IRON STORY</h1>
+
+<form class="form" action="/add-story" method="post">
+  {{!-- req.body.username --}}
+  Write your sentence <input class="form__big" type="text" name="sentence">
+  <br>
+  {{!-- req.body.password --}}
+  Your name <input class="form__small" type="text" name="name">
+  <br>
+
+  <button>Add</button>
+</form>
+
+
+<p class="error-msg">{{{message}}}</p>
+
+{{#each stories}}
+<div class="story">
+  <p class="story__text">{{this.content}}</p>
+  <p class="story__info">{{this.writer}}</p>
+  <p class="story__info">{{this.date}}</p>
+</div>
+{{/each}}

@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightslategray;
+  margin: 0; }
+
+a {
+  color: #00B7FF; }
+
+.story {
+  background-color: rgba(47, 79, 79, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  margin: 2px;
+  display: flex;
+  flex-direction: column; }
+
+.story__info {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px; }
+
+.error-msg {
+  font-size: 10px;
+  color: darkred; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+
+.form__big {
+  height: 100px;
+  width: 200px; }
+
+.form__small {
+  width: 200px; }
+
+/*# sourceMappingURL=style.css.map */
